@@ -1,0 +1,13 @@
+<h1>ListadoProductos</h1> 
+<ul>
+    <% productos.forEach(prod => { %>
+        <li>
+            <h2><%= prod.nombre %> </h2>
+            <img src="<%= prod.thumbnail %>" style="width:100px;" alt="">
+            <p>Precio: $ <%= prod.precio %> </p>
+        </li> 
+    <% }) %>
+</ul>
+<div>
+    <a href="/api/agregarProducto">Agregar Producto</a>
+</div>

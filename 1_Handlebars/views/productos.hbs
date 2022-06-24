@@ -1,0 +1,17 @@
+
+<h1>ListadoProductos</h1>
+<div>
+    <ul>
+        {{#each productos}}
+        <li>
+            <h1>{{nombre}}</h1>
+            <img src="{{thumbnail}}" style="width:200px" alt="">
+            <p>Precio: $ {{precio}}</p>
+        </li>
+        {{/each}}
+    </ul>
+</div>
+<br/>
+<div>
+    <a href="/api/agregarProducto">Agregar Producto</a>
+</div>

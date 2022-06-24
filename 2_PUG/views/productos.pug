@@ -1,0 +1,13 @@
+
+extends main.pug    
+block productos
+
+h1 ListadoProductos
+ul
+    each prod in productos
+    li
+        h2 #{prod.nombre}
+        img(src="#{prod.thumbnail}" alt="" style="width:200px;")
+        p #{prod.precio}
+div
+    a(href="/api/agregarProducto") Agregar Producto

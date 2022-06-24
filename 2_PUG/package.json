@@ -1,0 +1,17 @@
+{
+  "name": "clase-8",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start": "nodemon ./server.js"
+  },
+  "author": "Brian Kavinoff",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.1",
+    "express-handlebars": "^6.0.6",
+    "nodemon": "^2.0.16",
+    "pug": "^3.0.2"
+  }
+}
